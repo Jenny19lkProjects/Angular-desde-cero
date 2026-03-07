@@ -13,6 +13,34 @@ function multiply(firstNumber:number, secondNumber?:number, base:number=2){
 
 
 
+interface Character{
+    name:string;
+    hp:number;
+    showHp:()=>void
+}
+const healCharacter =(character:Character,amount :number)=>{
+character.hp +=amount;
+}
+const strider:Character={
+    name:'Jenny',
+    hp:50,
+    showHp(){
+        console.log(`Puntos de vida ${this.hp}`);
+    }
+}
+healCharacter(strider,10);
+strider.showHp();
+
+
+
+
+
+
+
+
+
+
+
 
 
 
