@@ -26,8 +26,13 @@ const{song:anotherSong,
 
 const {author}=details;
 
-
 console.log('Song:',song);
 console.log('Duration :',duration);
 console.log(`Author:`, audioPlayer.details.author);
 console.log(`Author:`,author);
+
+
+//Destructuracion de arreglos
+const [, , trunks]:string[]=['Goku','Vegueta','Trunks'];
+console.error('Personaje 3:', trunks);
+
