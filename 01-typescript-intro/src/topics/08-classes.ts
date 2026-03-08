@@ -9,6 +9,7 @@ export class Person{
 }
 
 export class Hero extends Person{
+    
     constructor(
         public alterEgo:string,
         public age:number,
